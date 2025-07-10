@@ -882,7 +882,7 @@
         // Create a link element
         const link = document.createElement("a");
         link.href = cvFilePath;
-        link.download = "Nishith_Shrestha_CV.pdf"; // Set the desired file name for download
+        link.download = cvFilePath; // Set the desired file name for download
         // Append the link to the body (required for Firefox)
         document.body.appendChild(link);
         // Programmatically click the link to trigger the download
