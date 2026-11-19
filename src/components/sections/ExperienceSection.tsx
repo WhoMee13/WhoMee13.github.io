@@ -21,12 +21,12 @@ export function ExperienceSection() {
   }, []);
   return <section id="experience" className="section-wrap relative z-[1] scroll-mt-24 py-28 sm:py-40">
     <SectionHeading index="04" title="Experience" note="THE WORK, THE COLLABORATION, THE CONTINUOUS LEARNING." />
-    <div className="relative ml-2 space-y-14 border-l border-paper/15 pl-7 sm:ml-8 sm:space-y-20 sm:pl-12">
-      <div ref={line} className="timeline-line absolute -left-px top-0 h-full w-px bg-clay" />
+    <div className="relative ml-2 space-y-14 border-l border-white/15 pl-7 sm:ml-8 sm:space-y-20 sm:pl-12">
+      <div ref={line} className="timeline-line absolute -left-px top-0 h-full w-px bg-[#01332b]" />
       {experience.map((entry, index) => <motion.article key={entry.title + entry.dates} initial={{ opacity: 0, x: 22 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: .2 }} transition={{ duration: .7, delay: index * .08, ease: easeOut }} className="relative grid gap-5 md:grid-cols-[.7fr_1.3fr] md:gap-12">
-        <span className="absolute -left-[33px] top-1 h-2 w-2 rounded-full border border-clay bg-ink sm:-left-[53px]" />
-        <div><span className="section-kicker">{entry.dates}</span><h3 className="display mt-3 text-2xl leading-tight sm:text-3xl">{entry.title}</h3><p className="mt-2 text-sm text-paper/70">{entry.company}</p><p className="mono mt-2 text-[9px] text-faint">{entry.location}</p></div>
-        <ul className="space-y-3">{entry.points.map((point) => <li className="flex gap-3 text-sm leading-6 text-muted" key={point}><span className="mt-[10px] h-1 w-1 shrink-0 rounded-full bg-clay" />{point}</li>)}</ul>
+        <span className="absolute -left-[33px] top-1 h-2 w-2 rounded-full border border-[#01332b] bg-[#08090b] sm:-left-[53px]" />
+        <div><span className="section-kicker">{entry.dates}</span><h3 className="display mt-3 text-2xl leading-tight sm:text-3xl">{entry.title}</h3><p className="mt-2 text-sm text-[#aaa9a3]">{entry.company}</p><p className="mono mt-2 text-[9px] text-[#737570]">{entry.location}</p></div>
+        <ul className="space-y-3">{entry.points.map((point) => <li className="flex gap-3 text-sm leading-6 text-[#a9aaa4]" key={point}><span className="mt-[10px] h-1 w-1 shrink-0 rounded-full bg-[#01332b]" />{point}</li>)}</ul>
       </motion.article>)}
     </div>
   </section>;
