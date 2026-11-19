@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow" cx="75%" cy="42%" r="55%">
+      <stop offset="0" stop-color="#01332b" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#01332b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#01332b" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#b5a5d9" stop-opacity=".15"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#08090b"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <circle cx="920" cy="300" r="210" fill="none" stroke="url(#line)" stroke-width="2"/>
+  <circle cx="920" cy="300" r="170" fill="none" stroke="#e3dcd2" stroke-opacity=".16"/>
+  <circle cx="920" cy="300" r="122" fill="#01332b" fill-opacity=".08" stroke="#01332b" stroke-opacity=".5"/>
+  <text x="86" y="205" fill="#01332b" font-family="Arial, sans-serif" font-size="22" letter-spacing="5">FULL STACK DEVELOPER · KATHMANDU, NEPAL</text>
+  <text x="78" y="345" fill="#e3dcd2" font-family="Arial, sans-serif" font-size="108" font-weight="700" letter-spacing="-8">Nishith</text>
+  <text x="78" y="458" fill="#01332b" font-family="Arial, sans-serif" font-size="108" font-weight="700" letter-spacing="-8">Shrestha</text>
+  <path d="M88 518h520" stroke="#e3dcd2" stroke-opacity=".25"/>
+</svg>
